@@ -1,0 +1,15 @@
+// Font family
+$font-family-main: "Poppins", sans-serif;
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-md: 18px;
+$font-size-lg: 24px;
+$font-size-xl: 40px;
+
+@mixin title-big {
+  font-family: $font-family-main;
+  font-size: $font-size-xl;
+  font-weight: 700;
+  color: $color-text;
+}

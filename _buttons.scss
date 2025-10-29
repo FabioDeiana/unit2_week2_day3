@@ -1,0 +1,18 @@
+@use "colors" as *;
+
+@each $name, $color in $color-btns {
+  .btn-#{$name} {
+    background-color: $color;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba($color, 0.4);
+    }
+  }
+}
